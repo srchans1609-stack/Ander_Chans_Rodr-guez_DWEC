@@ -7,18 +7,22 @@ body {
   margin: 40px auto;
   padding: 0 20px;
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1 {
   color: #4f8cff;
 }
 
-
 #menu {
   background-color: #161b22;
   padding: 10px 15px;
   border-radius: 6px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 #menu ul {
@@ -28,7 +32,6 @@ h1 {
   display: flex;
   gap: 15px;
 }
-
 
 .enlace-menu {
   color: #58a6ff;
@@ -44,6 +47,20 @@ h1 {
   color: #79c0ff;
 }
 
+#modonoche {
+  background-color: #21262d;
+  color: #e8ecf4;
+  border: 1px solid #30363d;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+#modonoche:hover {
+  background-color: #30363d;
+}
 
 #mi-boton {
   background-color: #4CAF50;
@@ -60,9 +77,45 @@ h1 {
   background-color: #45a049;
 }
 
-
 #aviso {
   font-size: 18px;
   margin-top: 15px;
   color: #e8ecf4;
+}
+
+
+body.tema-claro {
+  background-color: #ffffff;
+  color: #1f2328;
+}
+
+body.tema-claro h1 {
+  color: #0969da;
+}
+
+body.tema-claro #menu {
+  background-color: #f6f8fa;
+}
+
+body.tema-claro .enlace-menu {
+  color: #0969da;
+}
+
+body.tema-claro .enlace-menu:hover {
+  background-color: #eaeef2;
+  color: #0550ae;
+}
+
+body.tema-claro #modonoche {
+  background-color: #f3f4f6;
+  color: #1f2328;
+  border: 1px solid #d0d7de;
+}
+
+body.tema-claro #modonoche:hover {
+  background-color: #d0d7de;
+}
+
+body.tema-claro #aviso {
+  color: #1f2328;
 }
