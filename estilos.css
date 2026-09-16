@@ -1,12 +1,36 @@
 body {
-font-family: "Segoe UI", system-ui, sans-serif;
-background-color: #0f1426;
-color: #e8ecf4;
-max-width: 700px;
-margin: 40px auto;
-padding: 0 20px;
-line-height: 1.6;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: #0f1426;
+  color: #e8ecf4;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
 }
+
 h1 {
-color: #4f8cff;
+  color: #4f8cff;
+}
+
+/* Estilos del botón (Fase 02) */
+#mi-boton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#mi-boton:hover {
+  background-color: #45a049;
+}
+
+/* Aviso para el contador */
+#aviso {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #e8ecf4; /* Mismo tono claro para destacar en el fondo oscuro */
 }
