@@ -18,9 +18,9 @@ if (btnModoNoche) {
     document.body.classList.toggle('tema-claro');
 
     if (document.body.classList.contains('tema-claro')) {
-      btnModoNoche.textContent = '🌙 Modo oscuro';
+      btnModoNoche.textContent = 'Modo oscuro';
     } else {
-      btnModoNoche.textContent = '☀️ Modo claro';
+      btnModoNoche.textContent = 'Modo claro';
     }
   });
 }
