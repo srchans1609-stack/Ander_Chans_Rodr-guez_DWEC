@@ -1,3 +1,4 @@
+
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
   background-color: #0f1426;
@@ -10,6 +11,37 @@ body {
 
 h1 {
   color: #4f8cff;
+}
+
+
+#menu {
+  background-color: #161b22;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+
+.enlace-menu {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.enlace-menu:hover {
+  background-color: #1f293d;
+  color: #79c0ff;
 }
 
 
@@ -32,37 +64,5 @@ h1 {
 #aviso {
   font-size: 18px;
   margin-top: 15px;
-  color: #e8ecf4; 
-}
-
-
-#menu {
-  background-color: #161b22; 
-  padding: 10px 15px;
-  border-radius: 6px;
-  margin-bottom: 25px;
-}
-
-#menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-}
-
-
-.enlace-menu {
-  color: #58a6ff;            
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-
-.enlace-menu:hover {
-  background-color: #1f293d; 
-  color: #79c0ff;            
+  color: #e8ecf4;
 }
