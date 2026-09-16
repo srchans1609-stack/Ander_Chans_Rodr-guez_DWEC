@@ -12,7 +12,7 @@ h1 {
   color: #4f8cff;
 }
 
-/* Estilos del botón (Fase 02) */
+
 #mi-boton {
   background-color: #4CAF50;
   color: white;
@@ -28,9 +28,41 @@ h1 {
   background-color: #45a049;
 }
 
-/* Aviso para el contador */
+
 #aviso {
   font-size: 18px;
   margin-top: 15px;
-  color: #e8ecf4; /* Mismo tono claro para destacar en el fondo oscuro */
+  color: #e8ecf4; 
+}
+
+
+#menu {
+  background-color: #161b22; 
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+
+.enlace-menu {
+  color: #58a6ff;            
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.enlace-menu:hover {
+  background-color: #1f293d; 
+  color: #79c0ff;            
 }
