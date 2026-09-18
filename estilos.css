@@ -1,4 +1,3 @@
-
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
   background-color: #0f1426;
@@ -83,6 +82,43 @@ h1 {
   color: #e8ecf4;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #161b22;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+thead {
+  background-color: #1f293d;
+  border-bottom: 2px solid #30363d;
+}
+
+th {
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #21262d;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: #1c2333;
+}
 
 body.tema-claro {
   background-color: #ffffff;
@@ -118,4 +154,26 @@ body.tema-claro #modonoche:hover {
 
 body.tema-claro #aviso {
   color: #1f2328;
+}
+
+body.tema-claro table {
+  background-color: #f6f8fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.tema-claro thead {
+  background-color: #eaeef2;
+  border-bottom: 2px solid #d0d7de;
+}
+
+body.tema-claro th {
+  color: #0969da;
+}
+
+body.tema-claro tbody tr {
+  border-bottom: 1px solid #e1e4e8;
+}
+
+body.tema-claro tbody tr:hover {
+  background-color: #f1f3f5;
 }
