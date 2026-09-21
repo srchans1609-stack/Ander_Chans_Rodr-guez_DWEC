@@ -1,6 +1,5 @@
 console.log("¡Hola DWEC! Mi taller ya funciona.");
 
-// --- Lógica del botón con contador ---
 const boton = document.getElementById('mi-boton');
 const aviso = document.getElementById('aviso');
 let contador = 0;
@@ -12,7 +11,6 @@ if (boton && aviso) {
   });
 }
 
-// --- Lógica del Modo Claro / Oscuro ---
 const btnModoNoche = document.getElementById('modonoche');
 
 if (btnModoNoche) {
@@ -27,9 +25,6 @@ if (btnModoNoche) {
   });
 }
 
-// --- FASE 03: Tabla de Videojuegos Dinámica ---
-
-// Momento 1: Colección de datos en un array de objetos
 const videojuegos = [
   {
     nombre: "Grand Theft Auto V",
@@ -68,14 +63,11 @@ const videojuegos = [
   }
 ];
 
-// Momento 3: Selección del cuerpo de la tabla y renderizado dinámico
 const cuerpoTabla = document.getElementById('cuerpoTabla');
 
 if (cuerpoTabla) {
-  // Limpiamos el contenido por seguridad
   cuerpoTabla.innerHTML = '';
 
-  // Recorremos la lista de videojuegos para construir la estructura HTML de las filas
   videojuegos.forEach(juego => {
     const fila = document.createElement('tr');
 
@@ -84,7 +76,7 @@ if (cuerpoTabla) {
       <td>${juego.compania}</td>
       <td>${juego.plataforma}</td>
       <td>${juego.valoracion}</td>
-      <td>${juego.precio.toFixed(2)} €</td>
+      <td class="precio-col">${juego.precio.toFixed(2)}&nbsp;&euro;</td>
     `;
 
     cuerpoTabla.appendChild(fila);
